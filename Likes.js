@@ -12,7 +12,8 @@ j = 1;
 function LikearShouts(){
  
 
-          	taringa.shout.getshouts( function(err, shout){
+            taringa.request('http://api.taringa.net/shout/public/view', function(err,response,body){
+shout = JSON.parse(body);
 
                 if(err){
                     console.log(err);
