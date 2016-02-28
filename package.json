@@ -5,6 +5,8 @@
   "main": "Likes.js",
   "dependencies": {
     "express": "^4.13.4",
+    "lodash": "^4.5.1",
+    "lodash.includes": "^4.1.0",
     "taringajs": "^0.1.5"
   },
   "devDependencies": {},
