@@ -26,11 +26,16 @@ for(i=0; i<3; i++){
     var n = str.indexOf("aryoamgames");
     var a = str.indexOf("pasate");
     var b = str.indexOf("pásate");
+    var g = str.indexOf("hola");
+    var h = str.indexOf("taringaon");
 
     var comando = str.split(" ");
 
     var x = str.indexOf("1");
 
+                  if((g != -1) || (h != -1)){
+                    taringa.shout.add_comment ("Hola "+shout[i].owner.nick, shout[i].id , shout[i].owner.id , "shout")
+                  }
                   if((n != -1 && a != -1 && x < 0) || (n != -1 && b != -1 && x < 0)){
                     taringa.shout.add_comment ("Ingresa un ID valido", shout[i].id , shout[i].owner.id , "shout")
                   }else if((n != -1 && a!= -1 ) || (n != -1 && b!= -1 )){
