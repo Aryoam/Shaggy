@@ -32,8 +32,8 @@ for(i=0; i<3; i++){
     var comando = str.split(" ");
 
     var x = str.indexOf("1");
-
-                  if((g != -1) || (h != -1)){
+// || (h != -1)
+                  if((g != -1)){
                     taringa.shout.add_comment ("Hola "+shout[i].owner.nick, shout[i].id , shout[i].owner.id , "shout")
                   }
                   if((n != -1 && a != -1 && x < 0) || (n != -1 && b != -1 && x < 0)){
